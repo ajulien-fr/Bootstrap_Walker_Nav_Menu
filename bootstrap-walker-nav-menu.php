@@ -3,8 +3,8 @@
 /**
  * Class Name: Bootstrap_Walker_Nav_Menu
  * Version: 1.0.0
- * GitHub URI: https://github.com/juavenel/Bootstrap_Walker_Nav_Menu/
  * Description: A Bootstrap 4 Navbar for WordPress
+ * GitHub URI: https://github.com/juavenel/Bootstrap_Walker_Nav_Menu/
  * Author: juavenel
  * License: MIT
  */
