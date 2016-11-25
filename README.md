@@ -8,7 +8,7 @@ require_once('bootstrap-walker-nav-menu.php');
 
 ```php
 <nav class="navbar navbar-full navbar-light bg-faded">
-  <a class="navbar-brand" title="Accueil" href="<?= esc_url( home_url( '/' ) ); ?>">www.juavenel.fr</a>
+  <a class="navbar-brand" title="Accueil" href="<?= esc_url( home_url( '/' ) ); ?>"><?= get_bloginfo( 'name' ); ?></a>
   <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-content" 
           aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"></button>
   <?php
