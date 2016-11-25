@@ -2,7 +2,6 @@
 A Bootstrap 4 Navbar for WordPress
 
 ```php
-// Register A Bootstrap_Walker_Nav_Menu Class
 require_once('bootstrap-walker-nav-menu.php');
 ```
 
