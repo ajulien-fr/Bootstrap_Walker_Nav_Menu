@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * Class Name: Bootstrap_Walker_Nav_Menu
+ * Version: 1.0.0
+ * GitHub URI: https://github.com/juavenel/Bootstrap_Walker_Nav_Menu/
+ * Description: A Bootstrap 4 Navbar for WordPress
+ * Author: juavenel
+ * License: MIT
+ */
+
 class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
 
   private $current_item;
