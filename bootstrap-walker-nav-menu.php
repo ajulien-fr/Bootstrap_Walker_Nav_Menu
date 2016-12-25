@@ -226,7 +226,7 @@ class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
    */
   public function end_el( &$output, $item, $depth = 0, $args = array() ) {
     
-    if ( $args->has_children && $depth === 0 ) $output .= "</li>\n";
+    if ( in_array( 'menu-item-has-children', $item->classes ) && $depth === 0 ) $output .= "</li>\n";
   
   }
 }
