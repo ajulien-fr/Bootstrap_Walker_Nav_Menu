@@ -189,8 +189,13 @@ class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
     $title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
 
     $item_output = $args->before;
+    
     $item_output .= '<a'. $attributes .'>';
-    $item_output .= $args->link_before . $title . $args->link_after;
+    
+    if (!empty($item->attr_title)) $item_output .= '<span class="' . esc_attr( $item->attr_title ) . '"></span>';
+    
+    else $item_output .= $args->link_before . $title . $args->link_after;
+    
     $item_output .= '</a>';
     $item_output .= $args->after;
 
