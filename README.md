@@ -23,3 +23,4 @@ require_once('bootstrap-walker-nav-menu.php');
   ?>
 </nav>
 ```
+If you want an icon as a text like fa-github in FontAwesome use "fa fa-github" in attr_title (Title Attribute).
