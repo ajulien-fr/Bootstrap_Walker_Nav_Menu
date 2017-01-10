@@ -168,6 +168,7 @@ class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
     $attributes = '';
     foreach ( $atts as $attr => $value ) {
       if ( ! empty( $value ) ) {
+        if ($attr === 'title') $value = $item->title;
         $value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
         $attributes .= ' ' . $attr . '="' . $value . '"';
       }
