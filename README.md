@@ -16,8 +16,8 @@ require_once('bootstrap-walker-nav-menu.php');
   wp_nav_menu([
     'theme_location'  => 'primary_navigation',
     'container_id'    => 'navbar-content',
-    'container_class' => 'collapse navbar-toggleable-md',
-    'menu_class'      => 'nav navbar-nav',
+    'container_class' => 'collapse navbar-collapse',
+    'menu_class'      => 'navbar-nav',
     'walker'          => new Bootstrap_Walker_Nav_Menu()
   ]);
   endif;
