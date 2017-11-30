@@ -6,10 +6,11 @@ require_once('bootstrap-walker-nav-menu.php');
 ```
 
 ```php
-<nav class="navbar navbar-full navbar-light bg-faded">
-  <a class="navbar-brand" title="Accueil" href="<?= esc_url( home_url( '/' ) ); ?>"><?= get_bloginfo( 'name' ); ?></a>
-  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar-content" 
-          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"></button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="<?= {{ home_url('/') }} ?>">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   <?php
   if (has_nav_menu('primary_navigation')) :
   wp_nav_menu([
