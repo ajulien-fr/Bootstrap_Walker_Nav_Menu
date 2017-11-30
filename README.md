@@ -10,7 +10,7 @@ require_once('bootstrap-walker-nav-menu.php');
   <a class="navbar-brand" href="<?= {{ home_url('/') }} ?>">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+  </button>
   <?php
   if (has_nav_menu('primary_navigation')) :
   wp_nav_menu([
